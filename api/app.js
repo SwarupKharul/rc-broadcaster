@@ -4,7 +4,7 @@ module.exports = (req, res) => {
   console.log("location of executioner", process.cwd());
   async function worker() {
     const storage = new Storage();
-    const bucketName = "reverse-coding-2020.appspot.com";
+    const bucketName = "reverse-coding-2023.appspot.com";
     const [files] = await storage.bucket(bucketName).getFiles();
     const dataStorage = [];
     for (let i = 0; i < files.length; i++) {
